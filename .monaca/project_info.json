@@ -9,7 +9,7 @@
    "build": {
       "transpile": {
          "enabled": true,
-         "src": "src/main.js",
+         "src": "src/main.ts",
          "dist": "www/dist.js"
       }
    }
