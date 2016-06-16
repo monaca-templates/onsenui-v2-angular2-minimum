@@ -12,7 +12,7 @@ import '@angular/router';
 // import 'rxjs/Rx';
 
 // Onsen UI
-import 'onsenui'
+window['ons'] = require('onsenui');
 import {ONS_DIRECTIVES} from 'angular2-onsenui';
 
 // Application code starts here
