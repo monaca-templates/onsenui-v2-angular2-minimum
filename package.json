@@ -11,7 +11,7 @@
     "@angular/platform-browser-dynamic": "2.0.0-rc.1",
     "@angular/platform-server": "2.0.0-rc.1",
     "@angular/router": "2.0.0-rc.1",
-    "angular2-onsenui": "0.1.0-beta.6",
+    "angular2-onsenui": "^0.1.0-beta.8",
     "core-js": "^2.2.0",
     "onsenui": "^2.0.0-rc.10",
     "rxjs": "5.0.0-beta.6",
