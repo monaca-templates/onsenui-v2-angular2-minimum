@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
 
 import 'onsenui';
 import {ONS_DIRECTIVES} from 'angular2-onsenui';
@@ -10,7 +9,5 @@ import {ONS_DIRECTIVES} from 'angular2-onsenui';
   templateUrl: 'app/app.html',
 })
 export class MyApp {
-
   constructor() {}
-
 }
