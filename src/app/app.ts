@@ -4,25 +4,11 @@ import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
 import 'onsenui';
 import {ONS_DIRECTIVES} from 'angular2-onsenui';
 
-import {Home} from './components/home/home';
-import {Animations} from './components/animations/animations';
-import {Forms} from './components/forms/forms';
-import {Dialogs} from './components/dialogs/dialogs';
-import {Tabbar} from './components/tabbar/tabbar';
-
 @Component({
   selector: 'app',
-  providers: [],
-  pipes: [],
-  directives: [ROUTER_DIRECTIVES, Tabbar, ONS_DIRECTIVES],
+  directives: [ONS_DIRECTIVES],
   templateUrl: 'app/app.html',
 })
-@Routes([
-  { path: '/home',       component: Home,       },
-  { path: '/forms',      component: Forms,      },
-  { path: '/dialogs',    component: Dialogs,    },
-  { path: '/animations', component: Animations, },
-])
 export class MyApp {
 
   constructor() {}
