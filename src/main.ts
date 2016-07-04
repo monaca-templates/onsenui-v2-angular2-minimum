@@ -1,16 +1,3 @@
-// Polyfills
-import 'core-js';
-require('zone.js/dist/zone');
-require('zone.js/dist/long-stack-trace-zone');
-
-// Vendor imports
-import '@angular/platform-browser-dynamic';
-import '@angular/platform-browser';
-import '@angular/core';
-import '@angular/http';
-import '@angular/router';
-// import 'rxjs/Rx';
-
 // Onsen UI
 window['ons'] = require('onsenui');
 import {ONS_DIRECTIVES} from 'angular2-onsenui';

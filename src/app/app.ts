@@ -1,13 +1,19 @@
 import {Component} from '@angular/core';
-
-import 'onsenui';
-import {ONS_DIRECTIVES} from 'angular2-onsenui';
+import {onsNotification, ONS_DIRECTIVES} from 'angular2-onsenui';
 
 @Component({
   selector: 'app',
   directives: [ONS_DIRECTIVES],
-  templateUrl: 'app/app.html',
+  templateUrl: './app.html',
 })
 export class MyApp {
   constructor() {}
+
+  alert() {
+  	onsNotification.alert({
+	  message: 'Hello World!',
+	  title: 'Onsen UI!',
+	  animation: 'default'
+	});
+  }
 }
