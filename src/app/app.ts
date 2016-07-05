@@ -4,15 +4,16 @@ import {onsNotification, ONS_DIRECTIVES} from 'angular2-onsenui';
 @Component({
   selector: 'app',
   directives: [ONS_DIRECTIVES],
-  templateUrl: './app.html',
+  template: require('./app.html'),
+  styles: [require('./app.css')]
 })
 export class MyApp {
   constructor() {}
 
   alert() {
   	onsNotification.alert({
-	  message: 'Hello World!',
-	  title: 'Onsen UI!',
+	  message: 'This is an Onsen UI alert notification test.',
+	  title: 'Alert Test',
 	  animation: 'default'
 	});
   }
