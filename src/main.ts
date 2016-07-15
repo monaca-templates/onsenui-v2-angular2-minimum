@@ -16,7 +16,10 @@ import {ROUTER_PROVIDERS} from '@angular/router';
 
 import {MyApp} from './app/app';
 
-// enableProdMode()
+// Enable production mode when in production mode.
+if (process.env.NODE_ENV === 'production') {
+  enableProdMode();
+}
 
 bootstrap(MyApp, [
   HTTP_PROVIDERS,
