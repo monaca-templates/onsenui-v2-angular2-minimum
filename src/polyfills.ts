@@ -1,7 +1,7 @@
 import 'core-js';
 import 'reflect-metadata';
 require('zone.js/dist/zone');
-if (process.env.ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
   // Production
 } else {
   // Development
