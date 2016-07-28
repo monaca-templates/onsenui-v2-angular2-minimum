@@ -1,11 +1,6 @@
-// Onsen UI
-window['ons'] = require('onsenui');
-
 // Onsen UI Styling and Icons
 require('onsenui/stylus/blue-basic-theme.styl');
 require('onsenui/css/onsenui.css');
-
-import {ONS_DIRECTIVES} from 'angular2-onsenui';
 
 // Application code starts here
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
