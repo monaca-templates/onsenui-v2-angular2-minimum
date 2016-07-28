@@ -11,10 +11,6 @@ export class MyApp {
   constructor() {}
 
   alert() {
-  	onsNotification.alert({
-	  message: 'This is an Onsen UI alert notification test.',
-	  title: 'Alert Test',
-	  animation: 'default'
-	});
+    onsNotification.alert('This is an Onsen UI alert notification test.');
   }
 }
