@@ -8,9 +8,7 @@
    "template-type": "angular2",
    "build": {
       "transpile": {
-         "enabled": true,
-         "src": "src/main.ts",
-         "dist": "www/dist.js"
+         "enabled": true
       }
    }
 }

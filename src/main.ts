@@ -1,19 +1,6 @@
-// Polyfills
-import 'core-js';
-require('zone.js/dist/zone');
-require('zone.js/dist/long-stack-trace-zone');
-
-// Vendor imports
-import '@angular/platform-browser-dynamic';
-import '@angular/platform-browser';
-import '@angular/core';
-import '@angular/http';
-import '@angular/router';
-// import 'rxjs/Rx';
-
-// Onsen UI
-window['ons'] = require('onsenui');
-import {ONS_DIRECTIVES} from 'angular2-onsenui';
+// Onsen UI Styling and Icons
+require('onsenui/stylus/blue-basic-theme.styl');
+require('onsenui/css/onsenui.css');
 
 // Application code starts here
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
@@ -24,7 +11,10 @@ import {ROUTER_PROVIDERS} from '@angular/router';
 
 import {MyApp} from './app/app';
 
-// enableProdMode()
+// Enable production mode when in production mode.
+if (process.env.NODE_ENV === 'production') {
+  enableProdMode();
+}
 
 bootstrap(MyApp, [
   HTTP_PROVIDERS,
