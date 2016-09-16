@@ -1,9 +1,8 @@
 import {Component} from '@angular/core';
-import {onsNotification, ONS_DIRECTIVES} from 'angular2-onsenui';
+import {onsNotification} from 'angular2-onsenui';
 
 @Component({
   selector: 'app',
-  directives: [ONS_DIRECTIVES],
   template: require('./app.html'),
   styles: [require('./app.css')]
 })
