@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {onsNotification} from 'angular2-onsenui';
+import * as ons from 'onsenui';
 
 @Component({
   selector: 'app',
@@ -10,6 +10,6 @@ export class MyApp {
   constructor() {}
 
   alert() {
-    onsNotification.alert('This is an Onsen UI alert notification test.');
+    ons.notification.alert('This is an Onsen UI alert notification test.');
   }
 }
