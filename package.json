@@ -31,11 +31,12 @@
     }
   },
   "scripts": {
-    "monaca:preview": "npm run watch",
+    "monaca:preview": "npm run watch & npm run dev",
     "monaca:transpile": "npm run build",
+    "monaca:debug": "npm run watch",
     "dev": "webpack-serve --open",
     "build": "webpack --mode production",
-    "watch": "webpack-serve --open & webpack --watch"
+    "watch": "webpack --watch --mode production"
   },
   "devDependencies": {
     "cordova": "^7.1.0",
