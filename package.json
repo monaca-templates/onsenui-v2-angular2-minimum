@@ -31,7 +31,7 @@
     }
   },
   "scripts": {
-    "monaca:preview": "npm run watch & npm run dev",
+    "monaca:preview": "webpack-serve --open & webpack --watch --mode production",
     "monaca:transpile": "npm run build",
     "monaca:debug": "npm run watch",
     "dev": "webpack-serve --open",
