@@ -4,9 +4,8 @@ import * as ons from 'onsenui';
 @Component({
   selector: 'app',
   template: require('./app.html'),
-  styles: [
-  	'./app.css'
-  ]
+  styleUrls: ['app.css'],
+  moduleId: module.id
 })
 export class MyApp {
   constructor() {}
